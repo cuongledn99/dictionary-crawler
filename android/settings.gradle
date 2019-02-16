@@ -1,0 +1,3 @@
+rootProject.name = 'dictionary_crawl'
+
+include ':app'
