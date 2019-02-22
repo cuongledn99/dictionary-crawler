@@ -4544,6 +4544,16 @@ react-mixin@^5.0.0:
     object-assign "^4.0.1"
     smart-mixin "^2.0.0"
 
+react-native-audio@^4.3.0:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/react-native-audio/-/react-native-audio-4.3.0.tgz#fae22b81f6a4dda706fd4837d0c6a89c66cf2e7e"
+  integrity sha512-QQYq28eSJy+y/Ukvry0AkbwMVELAj+LcEwCVRH+7sKLqlnoBBxGd4ilhgJHjwOiC70192LueGbjXJjPPEwW3iA==
+
+react-native-fast-image@^5.1.2:
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/react-native-fast-image/-/react-native-fast-image-5.1.2.tgz#c9b909993e9304736c3d9806df80f7a9705ef829"
+  integrity sha512-NZsuW36I4fqnlOuxh0ZY31Q7wGWSqZMOC0wtp7ZcSG2dmjXSFaSFTdxX2vJx4Dhm0tMT3qG4yrn2ob3BiZEudA==
+
 react-native-gallery-swiper@^1.4.2:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/react-native-gallery-swiper/-/react-native-gallery-swiper-1.6.0.tgz#ccae814c372423476953b67999ca7322319af6a9"
@@ -4561,6 +4571,16 @@ react-native-image-layout@^3.2.0:
     data.task "^3.1.2"
     prop-types "^15.6.2"
     react-native-gallery-swiper "^1.4.2"
+
+react-native-sound@^0.10.12:
+  version "0.10.12"
+  resolved "https://registry.yarnpkg.com/react-native-sound/-/react-native-sound-0.10.12.tgz#f912d6f9d6e9e2b42b391e0226787628d940f01a"
+  integrity sha512-lhvzZ+ekNSHW9s4FjmxxGAQmd7yDT9FnHgJNP824cMyHRrTES/LgHnSOxES/1FWVoaQ8FdfbEHkWd2rN0G/L9A==
+
+react-native-streaming-audio-player@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/react-native-streaming-audio-player/-/react-native-streaming-audio-player-0.2.2.tgz#49e9e2ef0adac134319d759ebae46a44e1adb9ed"
+  integrity sha1-Seni7wrawTQxnXWeuuRqROGtue0=
 
 react-native@0.58.4:
   version "0.58.4"

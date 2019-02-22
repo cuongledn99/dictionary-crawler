@@ -9,7 +9,11 @@
   "dependencies": {
     "react": "16.6.3",
     "react-native": "0.58.4",
-    "react-native-image-layout": "^3.2.0"
+    "react-native-audio": "^4.3.0",
+    "react-native-fast-image": "^5.1.2",
+    "react-native-image-layout": "^3.2.0",
+    "react-native-sound": "^0.10.12",
+    "react-native-streaming-audio-player": "^0.2.2"
   },
   "devDependencies": {
     "babel-core": "7.0.0-bridge.0",

@@ -1,30 +1,24 @@
 import React, { Component } from 'react';
 import { TouchableHighlight, StyleSheet, Text, View, Image } from 'react-native';
+import Sound from 'react-native-sound';
+import Player from 'react-native-streaming-audio-player';
 export default class DefineItem extends Component {
     handlePress = () => {
-        //         // Load the sound file 'whoosh.mp3' from the app bundle
-        // // See notes below about preloading sounds within initialization code below.
-        // var whoosh = new Sound(this.props.data.mp3, Sound.MAIN_BUNDLE, (error) => {
-        //     if (error) {
-        //         alert('failed to load the sound', error);
-        //         return;
-        //     }
-        //     // loaded successfully
-        //     alert('duration in seconds: ' + whoosh.getDuration() + 'number of channels: ' + whoosh.getNumberOfChannels());
-        // });
-
-        //         // Play the sound with an onEnd callback
-        //         whoosh.play((success) => {
-        //             if (success) {
-        //                 alert('successfully finished playing');
-        //             } else {
-        //                 alert('playback failed due to audio decoding errors');
-        //                 // reset the player to its uninitialized state (android only)
-        //                 // this is the only option to recover after an error occured and use the player again
-        //                 whoosh.reset();
-        //             }
-        //         });
+        const sound = new Sound(this.props.mp3,
+            undefined,
+            error => {
+                if (error) {
+                    console.log(error)
+                } else {
+                    console.log("Playing sound");
+                    sound.play(() => {
+                        // Release when it's done so we're not using up resources
+                        sound.release();
+                    });
+                }
+            });
     }
+
     CustomMapping = (arr) => {
 
         return arr.map((data) => {
@@ -34,6 +28,7 @@ export default class DefineItem extends Component {
         })
 
     }
+
     render() {
         let { pronoun, mp3, data, img } = this.props;
         return (
@@ -44,7 +39,7 @@ export default class DefineItem extends Component {
                             padding: 10,
                         }}>
                             <Text style={styles.headword}>{item.headword}</Text>
-                            <View style={{flexDirection: 'row'}}>
+                            <View style={{ flexDirection: 'row' }}>
                                 <Text style={styles.pronoun}>  /{pronoun}/  </Text>
                                 <TouchableHighlight onPress={this.handlePress}>
                                     <Image
